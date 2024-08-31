@@ -1,0 +1,483 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/porfile.jpeg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-white bg-black">
+    <nav class="bg-white sm:text-center sm:justify-center sm:items-center text-gray-700 fixed w-full z-50 shadow-lg">
+        <div class="w-[90%] mx-auto py-3 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <!-- Logo/Brand Name -->
+                    <div class="hidden sm:flex-shrink-0 md:flex items-center text-xl font-bold">
+                        <span class="text-black">Rajan</span>
+                        <span class="text-gray-400 px-2">Kumar</span>
+                        <span class="text-red-200">Khadka</span>
+                    </div>
+
+                    <div class="flex-shrink-0 md:hidden flex items-center text-2xl font-bold">
+                        <span class="text-black">Rajan Khadka</span>
+
+                    </div>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center  nav">
+                    <!-- Navigation Links -->
+                    <a href="#" class="text-purple-500 text-sm font-medium">Home</a>
+                    <a href="#skills" class="text-sm font-medium">Skills</a>
+                    <a href="#education" class="text-sm font-medium">Education</a>
+                    <a href="#project" class="text-sm font-medium">Project</a>
+                    <a href="#Experience" class= "text-sm font-medium">Experience</a>
+                    <a href="#contact" class= "text-sm font-medium">Contact</a>
+                </div>
+
+                <div class=" md:flex items-center">
+                    <!-- Call to Action Button -->
+                    <button
+                        class="px-4 py-2 border md:block hidden sm:inline-block sm:mt-1 rounded-full text-lg font-medium  hover:bg-gray-100">
+                        <a href="mailto:rajeshkhadka22e@gmail.com">Let's Talk</a>
+                        <span class="ml-2">→</span>
+                    </button>
+                </div>
+
+                <!-- Hamburger Menu Button for Mobile -->
+                <div class="flex items-center lg:hidden">
+                    <button id="mobile-menu-button"
+                        class="inline-flex items-center justify-center p-2 rounded-md  hover:bg-gray-100 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden ">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block text-lg font-medium ">Home</a>
+                <a href="#" class="block text-lg font-medium ">Skills</a>
+                <a href="#" class="block text-lg font-medium ">Education</a>
+                <a href="#" class="block text-lg font-medium">Project</a>
+                <a href="#" class="block text-lg font-medium ">Experience</a>
+                <a href="#" class="block text-lg font-medium ">Contact</a>
+                <button
+                    class="px-4 py-2 border sm:inline-block sm:mt-1 rounded-full text-lg font-medium hover:bg-gray-100">
+                    <a href="mailto:rajeshkhadka22e@gmail.com">Let's Talk</a>
+                    <span class="ml-2">→</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero -->
+
+    <section id="#hero" class="bg-gray-950 lg:h-[100vh] lg:pt-[20vh] text-white">
+        <div class="w-[86%] flex flex-col lg:flex-row pt-14 m-auto">
+            <!-- Text Section -->
+            <div class="w-full lg:w-1/2 text-center lg:text-left">
+                <div class="w-[80%] m-auto">
+                    <div class="flex lg:justify-start justify-center gap-3 mb-4">
+                        <!-- Facebook Icon -->
+                        <a href="https://www.facebook.com/rajesh.khadka.399041" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <!-- Instagram Icon -->
+                        <a href="https://www.instagram.com/rajesh.khadka.399041/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <!-- LinkedIn Icon -->
+                        <a href="https://www.linkedin.com/in/rajesh-khadka-b7a2362ba/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="mailto:rajeshkhadka22e@gmail.com">
+                            <i class="fas fa-envelope text-xl text-gray-600 hover:text-red-600"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold  opacity-80 leading-relaxed font-oswald">
+                            Hey there,<br>
+                            <span class="half-highlight">It's <span class="">Rajan Kumar Khadka</span></span>
+                        </h1>
+                        <p class="mt-2 text-gray-500 text-sm font-poppins">
+                            I'm an eager and flexible individual, always excited to tackle new challenges. Learning is
+                            my passion, and I'm determined to deliver excellent results. With a positive outlook and a
+                            mindset focused on growth, I'm prepared to make a meaningful contribution and accomplish
+                            great things. </p>
+                        <div class="mb-5 lg:mt-14 flex gap-5  mt-8 justify-center lg:justify-start">
+                            <a href="#"
+                                class="px-7 py-2 border-2 font-bold border-black bg-white text-black rounded-xl gradient text-xl ">Hire
+                                me</a>
+                            <a href="#"
+                                class="px-7 py-2 border-2 font-bold border-black   bg-white text-black rounded-xl gradient text-xl ">My
+                                Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Section (hidden on md and sm, visible on lg and larger) -->
+            <div class="w-full lg:w-[50%] hidden lg:block">
+                <div class="w-[80%] m-auto rounded-full">
+                    <img class="rounded-full" src="Screenshot_from_2024-08-30_22-29-19-removebg-preview (1).png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- skills -->
+
+    <section id="skills" class="lg:pt-10  pb-5 ">
+        <div class="w-[80%] m-auto">
+            <div class=" text-center justify-center">
+                <h3 class="text-5xl font-extrabold   font-oswald leading-loose">Skills</h3>
+                <h6 class="opacity-40 text-xl">Here are some of my skills on which I have been working on for
+                    the past 1 years. </h6>
+            </div>
+            <div class="w-[100%] mt-10 gap-5 block md:flex lg:flex ">
+                <div class="w-[100%] md:w-[49%] mr-auto ">
+                    <div class="border-2  border-green-400 h-[100%] py-5 rounded-3xl px-10">
+                        <h5 class=" font-bold  text-3xl md:pb-3 ">Frontend</h5>
+                        <div class=" flex flex-wrap text-center ">
+                            <h6
+                                class="border-2 flex  m-3  gap-2 gradient1 items-center  md:m-2 font-semibold text-xl rounded-2xl px-8 py-4">
+                                <i class="fab fa-html5"></i> HTML
+                            </h6>
+                            <h6
+                                class="border-2 gap-2  items-center  m-3 flex gradient1 font-semibold  text-xl rounded-2xl px-8 py-4">
+                                <i class="fab fa-css3-alt"></i>CSS
+                            </h6>
+                            <h6
+                                class="border-2 gap-2  m-3  items-center flex gradient1 font-semibold  text-xl rounded-2xl px-8 py-4">
+                                <i class="fab fa-tailwindcss"></i>Tailwind CSS
+                            </h6>
+                            <h6
+                                class="border-2 gap-2  m-3 items-center flex  gradient1 font-semibold  text-xl rounded-2xl px-8 py-4">
+                                <i class="fab fa-js-square"></i>JAVASCRIPT
+                            </h6>
+                            <h6
+                                class="border-2  gap-2  m-3 items-center  flex  gradient1  font-semibold text-xl rounded-2xl px-8 py-4">
+                                <i class="fab fa-react"></i>REACT
+                            </h6>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[100%] md:w-[49%] mt-8  md:mt-0 mr-auto  ">
+                    <div class="border-2  border-green-400 h-[100%] py-5 rounded-3xl px-10">
+                        <h5 class=" font-bold  text-3xl md:pb-3 ">Backend</h5>
+                        <div class=" flex flex-wrap text-center ">
+                            <h6
+                                class="border-2 flex  m-3  gap-2 gradient1 items-center  md:m-2 font-semibold text-xl rounded-2xl px-8 py-4">
+                                <i class="fab fa-html5"></i> Django
+                            </h6>
+                            <h6
+                                class="border-2 gap-2  items-center  m-3 flex gradient1 font-semibold  text-xl rounded-2xl px-8 py-4">
+                                <i class="fab fa-css3-alt"></i>Wordpress
+                            </h6>
+                            <h6
+                                class="border-2 gap-2  m-3  items-center flex gradient1 font-semibold  text-xl rounded-2xl px-8 py-4">
+                                <i class="fab fa-tailwindcss"></i> MYSQL
+                            </h6>
+                          
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="mt-8 w-[100%] text-center  justify-start items-center border-2 border-green-400 rounded-2xl">
+                <div class="py-5 px-3   md:justify-center w-[90%] items-center ">
+                    <h5 class=" font-bold  text-3xl md:pb-3 items-start">Tools</h5>
+                    <div class=" items-center justify-center  md:flex flex flex-wrap lg:flex">
+
+                        <h6
+                            class="border-2  ml-5 flex  items-center gap-3 gradient1 font-semibold  text-xl rounded-2xl px-8 py-4">
+                            <i class="fab fa-css3-alt"></i>Git
+                        </h6>
+                        <h6
+                            class="border-2 ml-5 flex items-center gap-3 gradient1 font-semibold  text-xl rounded-2xl px-8 py-4">
+                            <i class="fab fa-css3-alt"></i>Github
+                        </h6>
+                        <h6
+                            class="border-2 ml-5 flex items-center gap-3 gradient1 font-semibold  text-xl rounded-2xl px-8 py-4">
+                            <i class="fab fa-css3-alt"></i>PyCharm
+                        </h6>
+                        <h6
+                            class="border-2 ml-5 flex items-center gap-3 gradient1 font-semibold  text-xl rounded-2xl px-8 py-4">
+                            <i class="fab fa-css3-alt"></i>Vs Code
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+
+    <Section id="education" class=" ">
+        <div class="w-[80%] m-auto ">
+            <div class="justify-center text-center items-center">
+                <h4 class="font-poppins opacity-65 mt-10 text-4xl  font-bold leading-relaxed">Education</h4>
+                <p class=" opacity-80 text-sm">My education has been a journey of self-discovery and growth.My
+                    educational details are as follows.</p>
+            </div>
+
+            <div class="lg:flex lg:flex-wrap w-full lg:gap-8  ">
+                <div class="lg:flex lg:flex-wrap  lg:w-[48%] w-full mt-8 ">
+                    <div class=" w-full border border-green-400 rounded-2xl px-5 py-4">
+                        <div class="  ">
+                            <div class="w-20 h-20 m-auto justify-center mb-4">
+                                <img src="NepalayaLogo.c2c198be566715ac834e.png" alt="">
+                            </div>
+                            <a class="font-poppins text-xl  opacity-60 "
+                                href="https://nepalaya.edu.np/">Nepalaya
+                                College - Kalanki, Kathamdnu <button
+                                    class="bg-yellow-100  text-red-400 rounded  px-2 text-sm opacity-100">Running</button></a>
+                            <p class=" mt-4 text-sm font-signika leading-snug opacity-60">Bachelor of Science in
+                                Computer Science and Information Technology
+                            </p>
+                            <p class=" text-sm font-light font-signika opacity-90 mt-3 ">I am currently pursuing a
+                                B.Sc. in Computer Science and Information Technology (B.Sc.
+                                CSIT)
+                                degree, which I am on track to complete in 2025 from Nepalaya College, located in
+                                Kalanki,
+                                Kathmandu, Nepal. I have taken courses in Data Structures, Algorithms,
+                                Object-Oriented
+                                Programming, Database Management Systems, Operating Systems, and Computer Networks,
+                                among
+                                others.</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:flex lg:flex-wrap lg:gap-8 w-full lg:w-[48%]  mt-8 ">
+                    <div class=" w-full border  border-green-400 rounded-2xl px-5 ">
+                        <h3 class="text-3xl  opacity-55 font-bold mt-4">School </h3>
+                        <div class="my-3">
+                            <a class="font-poppins text-xl  opacity-60 "
+                                href="https://www.facebook.com/padmodaya.dang">Padmodaya Public Model Secondary
+                                School,Dang </a>
+                            <p class="mt-4 text-sm font-signika leading-snug opacity-60 ">National Examination Board
+                            </p>
+                            <p class=" text-sm font-light font-signika opacity-90 mt-3 "> I completed my class 12
+                                high school education at Padmodaya public model secondary school,Dang , where I
+                                studied Science.
+                            </p>
+                            </p>
+                        </div>
+                        <div class="">
+                            <a class="font-poppins text-xl opacity-60 " href="#">Chandra Jyoti Secondary
+                                School </a>
+                                <p class="mt-4 text-sm font-signika leading-snug opacity-60  ">School Leaving Certificate
+                                </p>
+                                <p class=" text-sm font-light font-signika opacity-90 mt-3 "> I completed my class 10
+                                    education at Chandra Jyoti Secondary School,Dang.
+                                </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+    <!-- project -->
+
+    <section id="project">
+
+        <div class=" text-center justify-center my-10">
+            <h3 class="text-4xl font-extrabold  opacity-65 font-oswald leading-loose">Projects</h3>
+            <h6 class=" text-sm">I want to worked on a wide range of projects. From web development to
+                android apps. Here are some of my projects.
+
+            </h6>
+        </div>
+
+        <div class="lg:w-[80%] flex flex-wrap m-auto lg:justify-center md:w-[90%] justify-start gap-3">
+
+            
+            <div class="lg:w-[350px] md:w-[32%] sm:w-[45%] w-[90%]  m-auto border rounded-3xl border-green-400">
+                <img class="h-[300px] rounded-t-3xl w-full object-cover" src="porfile.jpeg" alt="">
+
+                <div class="pt-10 px-4">
+                    <a class="font-poppins text-xl opacity-60 " href="#">Project Name </a>
+                    <p class="mt-4 text-sm font-signika leading-snug opacity-60  ">Lorem ipsum, dolor sit amet conse
+                        delectus veritatis aperiam? Voluptates nihil sunt quam totam delectus libero, doloribus tempora
+                        dolores reprehenderit, fugit quaerat maxime quae quod recusandae qui officiis consequchool
+                        Leaving Certificateuntur quisquam repellendus numquam error architecto. Quam, est.
+                    </p>
+                </div>
+                <div class="bg-gray-100 text-black gradient1 font-semibold  text-xl rounded-2xl mx-4 py-2 justify-center text-center my-4">
+                    <a class="   " href="#"> View Project</a>
+                </div>
+            </div>
+
+            <div class="lg:w-[350px] md:w-[32%] sm:w-[45%] w-[90%]  m-auto border rounded-3xl border-green-400">
+                <img class="h-[300px] rounded-t-3xl w-full object-cover" src="porfile.jpeg" alt="">
+
+                <div class="pt-10 px-4">
+                    <a class="font-poppins text-xl opacity-60 " href="#">Project Name </a>
+                    <p class="mt-4 text-sm font-signika leading-snug opacity-60  ">Lorem ipsum, dolor sit amet conse
+                        delectus veritatis aperiam? Voluptates nihil sunt quam totam delectus libero, doloribus tempora
+                        dolores reprehenderit, fugit quaerat maxime quae quod recusandae qui officiis consequchool
+                        Leaving Certificateuntur quisquam repellendus numquam error architecto. Quam, est.
+                    </p>
+                </div>
+                <div class=" bg-gray-100 text-black gradient1 font-semibold  text-xl rounded-2xl mx-4 py-2 justify-center text-center my-4">
+                    <a class="   " href="#"> View Project</a>
+                </div>
+            </div>
+
+
+            <div class="lg:w-[350px] md:w-[32%] sm:w-[45%] w-[90%]  m-auto border rounded-3xl border-green-400">
+                <img class="h-[300px] rounded-t-3xl w-full object-cover" src="porfile.jpeg" alt="">
+
+                <div class="pt-10 px-4">
+                    <a class="font-poppins text-xl  opacity-60 " href="#">Project Name </a>
+                    <p class="mt-4 text-sm font-signika leading-snug opacity-60  ">Lorem ipsum, dolor sit amet conse
+                        delectus veritatis aperiam? Voluptates nihil sunt quam totam delectus libero, doloribus tempora
+                        dolores reprehenderit, fugit quaerat maxime quae quod recusandae qui officiis consequchool
+                        Leaving Certificateuntur quisquam repellendus numquam error architecto. Quam, est.
+                    </p>
+                </div>
+                <div class=" bg-gray-100 text-black gradient1 font-semibold  text-xl rounded-2xl mx-4 py-2 justify-center text-center my-4">
+                    <a class="  " href="#"> View Project</a>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+
+<!-- experience -->
+
+
+<section id="Experience">
+    <div class="w-[80%] mt-20 m-auto ">
+        <h3 class="text-4xl font-extrabold   text-center opacity-65  font-oswald leading-loose">Experience</h3>
+        <p class="text-base opacity-70">My work experience as a Frontend Developer and working on Backend on my own projects.Learning as Full Stack Developer</p>
+    </div>
+
+
+    <div class="w-[80%] mt-8 m-auto  ">
+        <div class="flex">
+        <i class="fa-regular fa-note-sticky"></i>
+        <div class="pl-3 border-l  border-opacity-60 ml-1.5 ">
+            <h4>Full Stack Developer <span class="bg-gray-300 text-black p-1 rounded-3xl px-3"> Till Now</span></h4>
+        <p>Upwork Pvt Ltd</p>
+        <p>I'm a freelancer with a background as a full-stack developer. I bring versatile skills and a strong commitment to delivering top-quality solutions.
+        </p>
+        </div>
+    </div>
+        
+       
+    </div>
+
+  
+
+
+
+
+</section>
+
+
+<!-- Contact -->
+
+<section id="contact" class=" lg:mt-40  md:mb-10 mb-8 ">
+<div class="w-[80%] m-auto ">
+<h3 class="text-3xl font-bold leading-relaxed">
+    Need Help?
+</h3>
+<p class="text-lg  font-poppins font-normal">Feel free to reach out to me for any questions or opportunities or mail me directly on</p>
+<span class="underline font-poppins text-blue-700 text-lg font-bold" href="mailto:rajeshkhadka22e@gmail.com">rajeshkhadka22e@gmail.com</span>
+
+<div class="flex gap-6 w-full mt-10">
+    <div class="w-1/2">
+        <h4 class="text-xl font-medium mb-4">Your Name</h4>
+    <input class="p-5 bg-gray-800 w-full text-xl font-medium rounded-xl"  for="text" placeholder="Enter Your name"></input>
+    </div>
+    <div class="w-1/2">
+        <h4 class="text-xl font-medium mb-4">Your Email</h4>
+    <input class="p-5 bg-gray-800 w-full text-xl font-medium rounded-xl"    for="Email" placeholder="Enter Your Email"></input>
+    </div>
+</div>
+<h4 class="text-xl font-medium mt-8 mb-4">Your Messages</h4>
+<textarea name="" id="" class="p-5 bg-gray-800 w-full text-xl font-medium rounded-xl h-80" placeholder="Enter Your Message"></textarea>
+
+<h4 class="bg-blue-500 p-5 text-center rounded-xl text-xl font-bold mt-8">Send</h4>
+</div>
+</section>
+
+
+<!-- footer -->
+<section id=" footer">
+    <div class="md:w-[80%] w-[96%]  m-auto flex flex-col lg-flex  justify-between items-center pb-8 border-b-2 border-white">
+    <div class="flex lg:justify-start justify-center gap-4 mb-4  md:gap-6">
+        <!-- Facebook Icon -->
+        <a href="https://www.facebook.com/rajesh.khadka.399041" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <!-- Instagram Icon -->
+        <a href="https://www.instagram.com/rajesh.khadka.399041/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- LinkedIn Icon -->
+        <a href="https://www.linkedin.com/in/rajesh-khadka-b7a2362ba/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="mailto:rajeshkhadka22e@gmail.com">
+            <i class="fas fa-envelope text-xl text-gray-600 hover:text-red-600"></i>
+        </a>
+    </div>
+    <div class="  space-x-8 items-center flex ">
+        <!-- Navigation Links -->
+        <a href="#" class="text-purple-500 text-sm font-medium">Home</a>
+        <a href="#skills" class="text-sm font-medium">Skills</a>
+        <a href="#education" class="text-sm font-medium">Education</a>
+        <a href="#project" class="text-sm font-medium">Project</a>
+        <a href="#Experience" class= "text-sm font-medium">Experience</a>
+        <a href="#contact" class= "text-sm font-medium">Contact</a>
+    </div>
+    
+</div>
+<div>
+    <h4 class="text-center items-center text-sm my-5">© 2023 Rajan Kumar Khadka. All Rights Reserved.</h4>
+</div>
+</section>
+
+
+
+
+
+    
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
