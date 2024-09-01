@@ -2,50 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .text-gradient {
-    background: rgb(218,149,208);
-    background: linear-gradient(90deg, rgba(218,149,208,1) 0%, rgba(220,97,152,1) 35%, rgba(255,214,190,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: rgb(218, 149, 208);
+  background: linear-gradient(90deg,
+      rgba(218, 149, 208, 1) 0%,
+      rgba(220, 97, 152, 1) 35%,
+      rgba(255, 214, 190, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.background{
-    /* background: rgb(255,255,255); */
-    background: linear-gradient(90deg, rgba(255,255,255,1) 8%, rgb(251, 252, 189) 21%, rgb(248, 253, 169) 81%, rgba(252,252,252,1) 91%);
+.background {
+  /* background: rgb(255,255,255); */
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 1) 8%,
+      rgb(251, 252, 189) 21%,
+      rgb(248, 253, 169) 81%,
+      rgba(252, 252, 252, 1) 91%);
 }
+
 .half-highlight {
-    background: linear-gradient(transparent 50%, #f3e1a9 50%);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding: 0 2px;
-  }
+  background: linear-gradient(transparent 50%, #f3e1a9 50%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 0 2px;
   
-    .gradient:hover {
-        background: linear-gradient(90deg, rgb(253, 50, 36) 20%, rgb(230, 130, 17) 35%, rgb(223, 172, 6) 100%);
-        color: #fff; /* Optional: Change text color on hover */
-      }
-      .education{
-        background-color: #ECEAE8;
-      }
-  
-  .gradient1:hover{
-    background: linear-gradient(90deg, rgb(253, 50, 36) 20%, rgb(230, 130, 17) 35%, rgb(223, 172, 6) 100%);
-    color: #fff; /* Optional: Change text color on hover */
-  }
-  .gradient2{
-    background: rgb(249,253,178);
-background: linear-gradient(90deg, rgba(249,253,178,1) 9%, rgba(244,169,0,1) 39%, rgba(244,169,0,1) 61%, rgba(249,253,195,1) 91%);
-  }
-@media(max-width:1189px) {
-    .nav{
-        display:none;
-
-    }
-    .mobile-menu-button{
-        display: none !important;
-    }
 }
 
+.gradient:hover {
+  background: linear-gradient(90deg,
+      rgb(253, 50, 36) 20%,
+      rgb(230, 130, 17) 35%,
+      rgb(223, 172, 6) 100%);
+  color: #fff;
+  transition-duration: 0.3s;
+  /* Optional: Change text color on hover */
+}
 
+.education {
+  background-color: #faf4ed;
+}
 
+.gradient1:hover {
+  background: linear-gradient(90deg,
+      rgb(253, 50, 36) 20%,
+      rgb(230, 130, 17) 35%,
+      rgb(223, 172, 6) 100%);
+  color: #fff;
+  transition-duration: 0.3s;
+  /* Optional: Change text color on hover */
+}
+
+.gradient2 {
+  background: rgb(249, 253, 178);
+  background: linear-gradient(90deg,
+      rgba(249, 253, 178, 1) 9%,
+      rgba(244, 169, 0, 1) 39%,
+      rgba(244, 169, 0, 1) 61%,
+      rgba(249, 253, 195, 1) 91%);
+}
+
+@media (max-width: 1189px) {
+  /* body .nav {
+    display: none; 
+  }  */
+
+  .mobile-menu-button {
+    display: none !important;
+  }
+}
