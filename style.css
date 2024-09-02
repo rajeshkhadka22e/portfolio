@@ -21,13 +21,7 @@
       rgba(252, 252, 252, 1) 91%);
 }
 
-.half-highlight {
-  background: linear-gradient(transparent 50%, #f3e1a9 50%);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  padding: 0 2px;
-  
-}
+
 
 .gradient:hover {
   background: linear-gradient(90deg,
