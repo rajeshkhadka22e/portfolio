@@ -28,6 +28,7 @@
 </head>
 
 <body class="text-white bg-black">
+    
     <nav class="bg-white sm:text-center sm:justify-center sm:items-center text-gray-700 fixed w-full z-50 shadow-lg">
         <div class="w-[90%] mx-auto py-3 px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
@@ -38,68 +39,83 @@
                         <span class="text-gray-500 px-2">Kumar</span>
                         <span class="text-red-300">Khadka</span>
                     </div>
-
+    
                     <div class="flex-shrink-0 md:hidden flex items-center text-2xl font-bold">
                         <span class="text-black">Rajan Khadka</span>
-
                     </div>
                 </div>
-
-                <div class="hidden lg:flex space-x-8 items-center  nav">
+    
+                <div class="hidden lg:flex space-x-8 items-center nav">
                     <!-- Navigation Links -->
-                    <a href="#" class="text-purple-500 font-medium">Home</a>
-                    <a href="#skills" class=" font-medium">Skills</a>
+                    <a href="#hero" class="text-purple-500 font-medium">Home</a>
+                    <a href="#skills" class="font-medium">Skills</a>
                     <a href="#education" class="font-medium">Education</a>
                     <a href="#project" class="font-medium">Project</a>
-                    <a href="#Experience" class= "font-medium">Experience</a>
-                    <a href="#contact" class= "font-medium">Contact</a>
+                    <a href="#Experience" class="font-medium">Experience</a>
+                    <a href="#contact" class="font-medium">Contact</a>
                 </div>
-
-                <div class=" md:flex items-center">
+    
+                <div class="md:flex items-center">
                     <!-- Call to Action Button -->
-                    <button
-                        class="px-4 py-2 border  hidden lg:flex sm:mt-1 rounded-full text-lg font-medium  hover:bg-gray-100">
-                        <a href="mailto:rajeshkhadka22e@gmail.com">cv</a>
+                    <button class="px-4 py-2 border hidden lg:flex sm:mt-1 rounded-full text-lg font-medium hover:bg-gray-100">
+                        <a href="/path/to/your-cv.pdf" download="Rajan_Khadka_CV.pdf">Download CV</a>
                         <span class="ml-2">→</span>
                     </button>
                 </div>
-
+                
+    
                 <!-- Hamburger Menu Button for Mobile -->
                 <div class="flex items-center lg:hidden">
-                    <button id="mobile-menu-button"
-                        class="inline-flex items-center justify-center p-2 rounded-md  hover:bg-gray-100 focus:outline-none">
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md hover:bg-gray-100 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
-
                 </div>
             </div>
         </div>
-
+    
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden text-white bg-black text-center ">
+        <div id="mobile-menu" class="hidden lg:hidden text-white bg-black text-center">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#hero" class="block text-lg font-medium ">Home</a>
-                <a href="#skills" class="block text-lg font-medium ">Skills</a>
-                <a href="#education" class="block text-lg font-medium ">Education</a>
-                <a href="#project" class="block text-lg font-medium">Project</a>
-                <a href="#Experience" class="block text-lg font-medium ">Experience</a>
-                <a href="#contact" class="block text-lg font-medium ">Contact</a>
-                <button
-                    class="px-4 py-2 border sm:inline-block sm:mt-1 rounded-full text-lg font-medium hover:bg-black hover:text-white">
-                    <a href="mailto:rajeshkhadka22e@gmail.com">cv</a>
+                <a href="#hero" class="block text-lg font-medium mobile-menu-item">Home</a>
+                <a href="#skills" class="block text-lg font-medium mobile-menu-item">Skills</a>
+                <a href="#education" class="block text-lg font-medium mobile-menu-item">Education</a>
+                <a href="#project" class="block text-lg font-medium mobile-menu-item">Project</a>
+                <a href="#Experience" class="block text-lg font-medium mobile-menu-item">Experience</a>
+                <a href="#contact" class="block text-lg font-medium mobile-menu-item">Contact</a>
+                <button class="px-4 py-2 border sm:inline-block sm:mt-1 rounded-full text-lg font-medium hover:bg-black hover:text-white">
+                    <a href="mailto:rajeshkhadka22e@gmail.com" class="mobile-menu-item">cv</a>
                     <span class="ml-2">→</span>
                 </button>
             </div>
         </div>
     </nav>
+    
+    <script>
+        // Get elements
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+    
+        // Toggle mobile menu visibility
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    
+        // Hide mobile menu when clicking on a menu item
+        mobileMenuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+    
 
+ 
 <!-- Hero -->
 
-    <section id="#hero" class="bg-gray-950 md:pb-0 sm:h-auto md:pt-[30vh] lg:pt-[25vh] lg:h-[100vh] md:h-[100vh]  pt-[15vh]  text-white">
+    <section id="hero" class="bg-gray-950 md:pb-0 sm:h-auto md:pt-[30vh] lg:pt-[25vh] lg:h-[100vh] md:h-[100vh]  pt-[15vh]  text-white">
         <div class="w-[86%] flex flex-col lg:flex-row  m-auto">
             <!-- Text Section -->
             <div class="w-full lg:w-1/2 text-center lg:text-left">
@@ -314,7 +330,7 @@
 
     <!-- project -->
 
-    <section id="project" class="opacity-75 pt-14">
+    <!-- <section id="project" class="opacity-75 pt-14">
 
         <div class=" text-center justify-center my-10">
             <h3 class="text-4xl font-extrabold  opacity-65 font-oswald leading-loose">Projects</h3>
@@ -376,9 +392,55 @@
                 </div>
             </div>  
         </div>
+    </section> -->
+
+    <section id="project" class="opacity-75 pt-14">
+        <div class="text-center justify-center my-10">
+            <h3 class="text-4xl font-extrabold opacity-65 font-oswald leading-loose">Projects</h3>
+            <h6 class="text-xl opacity-75">I have worked on a wide range of projects, from web development to android apps. Here are some of my projects.</h6>
+        </div>
+    
+        <div class="lg:w-[80%] flex flex-wrap m-auto lg:justify-center md:w-[90%] items-start justify-start gap-3">
+            <!-- Project Card -->
+            <div class="lg:w-[32%] md:w-[32%] sm:w-[45%] w-[90%] m-auto border-2 rounded-3xl border-green-400 transform transition duration-300 hover:scale-105 hover:shadow-lg">
+                <img class="h-[300px] rounded-t-3xl w-full object-cover transition duration-300 hover:opacity-80" src="porfile.jpeg" alt="">
+    
+                <div class="pt-10 px-4">
+                    <a class="font-poppins text-lg opacity-60 hover:opacity-100 transition duration-300" href="#">Project Name</a>
+                    <p class="mt-4 text-sm font-signika leading-snug opacity-60 line-clamp-4">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam recusandae, perferendis tempora maxime provident itaque soluta ut fugit beatae in explicabo eveniet saepe dolorem quis rem perspiciatis dicta eaque? Quam. adipisicing elit. Sapiente quasi, dolore mollitia similique optio alias quas harum consectetur.</p>
+                </div>
+                <div class="bg-gray-100 text-black gradient1 font-semibold text-xl rounded-2xl mx-4 py-2 justify-center text-center my-4 transition duration-300 hover:bg-green-400 hover:text-white">
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+    
+            <!-- Repeat for other projects -->
+            <div class="lg:w-[32%] md:w-[32%] sm:w-[45%] w-[90%] m-auto border-2 rounded-3xl border-green-400 transform transition duration-300 hover:scale-105 hover:shadow-lg">
+                <img class="h-[300px] rounded-t-3xl w-full object-cover transition duration-300 hover:opacity-80" src="porfile.jpeg" alt="">
+    
+                <div class="pt-10 px-4">
+                    <a class="font-poppins text-lg opacity-60 hover:opacity-100 transition duration-300" href="#">Project Name</a>
+                    <p class="mt-4 text-sm font-signika leading-snug opacity-60 line-clamp-4">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure tenetur aliquid labore excepturi reiciendis voluptas mollitia, molestias pariatur expedita dolorum repellat blanditiis, harum est quaerat exercitationem voluptatibus. Voluptatum, veniam! adipisicing elit. Sapiente quasi, dolore mollitia similique optio alias quas harum consectetur.</p>
+                </div>
+                <div class="bg-gray-100 text-black gradient1 font-semibold text-xl rounded-2xl mx-4 py-2 justify-center text-center my-4 transition duration-300 hover:bg-green-400 hover:text-white">
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+    
+            <div class="lg:w-[32%] md:w-[32%] sm:w-[45%] w-[90%] m-auto border-2 rounded-3xl border-green-400 transform transition duration-300 hover:scale-105 hover:shadow-lg">
+                <img class="h-[300px] rounded-t-3xl w-full object-cover transition duration-300 hover:opacity-80" src="porfile.jpeg" alt="">
+    
+                <div class="pt-10 px-4">
+                    <a class="font-poppins text-lg opacity-60 hover:opacity-100 transition duration-300" href="#">Project Name</a>
+                    <p class="mt-4 text-sm font-signika leading-snug opacity-60 line-clamp-4">Lorem ipsum dolor sit amet, consectetu Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, placeat! Autem porro quis minus eveniet recusandae molestias maiores, vel tenetur veniam tempore cum nisi repudiandae dolorem ab quasi perspiciatis harum. r adipisicing elit. Sapiente quasi, dolore mollitia similique optio alias quas harum consectetur.</p>
+                </div>
+                <div class="bg-gray-100 text-black gradient1 font-semibold text-xl rounded-2xl mx-4 py-2 justify-center text-center my-4 transition duration-300 hover:bg-green-400 hover:text-white">
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
     </section>
-
-
+    
 <!-- experience -->
 
 
