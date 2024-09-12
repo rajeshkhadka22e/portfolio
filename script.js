@@ -9,7 +9,7 @@ document.getElementById('mobile-menu').onclick = function () {
     menu.classList.add('hidden');
 }
 function sendMaill(){
-    let parms ={
+    var parms ={
         name : document.getElementById("name").value,
         email : document.getElementById("email").value,
         message : document.getElementById("message").value
