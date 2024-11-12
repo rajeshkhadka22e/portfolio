@@ -68,25 +68,22 @@
 }
 
 /* Hover effect */
-.nav a:hover {
+/* .nav a:hover {
   color: #3bf821; /* Purple color on hover */
-  background-color: rgba(12, 12, 12, 0.1); /* Light purple background */
-  border-radius: 0.5rem; /* Rounded corners on hover */
-}
+  /* background-color: rgba(12, 12, 12, 0.1); /* Light purple background */
+  /* border-radius: 0.5rem; Rounded corners on hover */
 
-/* Active effect */
-.nav a.active {
+
+/* Active effect */ */
+/* .nav a.active {
   color: #5cec19; /* Purple color for active item */
-  font-weight: 700; /* Bold font for active item */
-  border-bottom: 2px solid #060508; /* Purple underline for active item */
-}
+  /* font-weight: 700; /* Bold font for active item */
+  /* border-bottom: 2px solid #060508; Purple underline for active item */
 
-@media (max-width: 1189px) {
-  /* body .nav {
-    display: none; 
-  }  */
 
-  .mobile-menu-button {
-    display: none !important;
+  @media (max-width: 1189px) {
+    .mobile-menu-button {
+      display: none !important;
+    }
   }
-}
+  
