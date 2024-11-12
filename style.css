@@ -68,18 +68,18 @@
 }
 
 /* Hover effect */
-/* .nav a:hover {
-  color: #3bf821; /* Purple color on hover */
-  /* background-color: rgba(12, 12, 12, 0.1); /* Light purple background */
-  /* border-radius: 0.5rem; Rounded corners on hover */
+.nav a:hover {
+  
+  background-color: rgba(12, 12, 12, 0.1); /* Light purple background */
+  border-radius: 0.5rem; /*Rounded corners on hover */
 
-
-/* Active effect */ */
-/* .nav a.active {
-  color: #5cec19; /* Purple color for active item */
-  /* font-weight: 700; /* Bold font for active item */
-  /* border-bottom: 2px solid #060508; Purple underline for active item */
-
+}
+/* Active effect  */
+.nav a.active {
+   /* Purple color for active item */
+  font-weight: 700; /* Bold font for active item */
+ border-bottom: 2px solid #060508;   /*Purple underline for active item */
+}
 
   @media (max-width: 1189px) {
     .mobile-menu-button {
